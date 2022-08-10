@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="icon" type="image/x-icon" href="./photos/calculator.svg">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script type="module" src="./dist/index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+</head>
+
+<body class="vh-100 d-flex align-items-center">
+    <div class="container p-5">
+        <div class="row justify-content-center align-content-center align-items-center">
+            <div class="col text-center">
+                <h1 class="title fw-light">Calculadora</h1>
+                <div class="mb-3">
+                    <label class="form-label">Insira o valor 1:</label>
+                    <input class="form-control text-center" id="valor1" type="number">
+                    <label class="form-label">Insira o valor 2:</label>
+                    <input class="form-control text-center" id="valor2" type="number">
+                    <label class="form-label">Selecione a operação:</label>
+                </div>
+                <button id="btnAdd" class="btn btn-primary">+</button>
+                <button id="btnSub" class="btn btn-primary">-</button>
+                <button id="btnMul" class="btn btn-primary">*</button>
+                <button id="btnDiv" class="btn btn-primary">/</button>
+                <p class="fs-5 mt-3">Resultado:</p>
+                <p id="resultado" class="fs-5">0</p>
+            </div>
+            <div id="historico" class="d-none col-3 flex-column text-center"></div>
+        </div>
+    </div>
+</body>
+
+</html>
